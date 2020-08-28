@@ -16,5 +16,4 @@ jobs:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           HOST: apps.mobird.in
           PROJECT: mynewapp
-          CONFIG: ${{ secrets.APP_CONFIG }}
           BRANCH: "test"
