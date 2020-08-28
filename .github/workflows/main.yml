@@ -13,4 +13,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: Get env-var
+        env:
+            GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo ${{ env.GITHUB_SHA }}
