@@ -2,8 +2,6 @@ name: Deploy to Dokku - production
 
 on: [push]
 
-
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -14,5 +12,5 @@ jobs:
           fetch-depth: 0
       - name: Get env-var
         env:
-            GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo ${{ env.GITHUB_SHA }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo ${{ GITHUB_SHA }}
