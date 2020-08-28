@@ -13,8 +13,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Get env-var
-        run: |
-        echo ${{ env.GITHUB_SHA }}
+        run: echo ${{ env.GITHUB_SHA }}
       - name: Deploy
         uses: woudsma/dokku-deploy-github-action@v1
         with:
