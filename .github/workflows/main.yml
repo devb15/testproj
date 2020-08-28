@@ -15,5 +15,5 @@ jobs:
         env:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           HOST: apps.mobird.in
-          PROJECT: mynewapp
+          PROJECT: newapp
           BRANCH: "test"
